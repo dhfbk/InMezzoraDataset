@@ -1,83 +1,25 @@
 <?xml encoding="UTF-8"?>
 
-<!ELEMENT trascrizioni (teiHeader,speech)>
-<!ATTLIST trascrizioni
+<!ELEMENT trascriptions (teiHeader,speech)>
+<!ATTLIST trascriptions
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT teiHeader (transcriptionDesc,equipment,sourceDesc,titleStmt,
-                     recordingStmt)>
+<!ELEMENT teiHeader (recording)>
 <!ATTLIST teiHeader
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT transcriptionDesc EMPTY>
-<!ATTLIST transcriptionDesc
-  xmlns CDATA #FIXED ''
-  ident NMTOKEN #REQUIRED
-  version CDATA #REQUIRED>
-
-<!ELEMENT equipment (p)>
-<!ATTLIST equipment
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT sourceDesc EMPTY>
-<!ATTLIST sourceDesc
-  xmlns CDATA #FIXED ''
-  url CDATA #REQUIRED
-  user NMTOKEN #REQUIRED>
-
-<!ELEMENT titleStmt (title)>
-<!ATTLIST titleStmt
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT title (#PCDATA)>
-<!ATTLIST title
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT recordingStmt (recording, host, guest, guest_2, date, location, format_type)>
-<!ATTLIST recordingStmt
-  xmlns CDATA #FIXED ''>
-  
-<!ELEMENT recording EMPTY>
-<!ATTLIST recording
-  xmlns CDATA #FIXED ''
-  dur NMTOKEN #REQUIRED
-  title CDATA #REQUIRED
-  type CDATA #REQUIRED
-  xml:id NMTOKEN #REQUIRED>
-
-<!ELEMENT host EMPTY>
-<!ATTLIST host
-  xmlns CDATA #FIXED ''
-  name CDATA #REQUIRED>
-
-<!ELEMENT guest EMPTY>
-<!ATTLIST guest
-  xmlns CDATA #FIXED ''
-  name CDATA #REQUIRED>
-  
-<!ELEMENT guest_1 EMPTY>
-<!ATTLIST guest
-  xmlns CDATA #FIXED ''
-  name CDATA #REQUIRED>
-  
-<!ELEMENT date (#PCDATA)>
-<!ATTLIST date
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT location (#PCDATA)>
-<!ATTLIST location
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT format_type (#PCDATA)>
-<!ATTLIST format_type
-  xmlns CDATA #FIXED ''>
-  
 <!ELEMENT speech (u)+>
 <!ATTLIST speech
   xmlns CDATA #FIXED ''
   id CDATA #REQUIRED>
 
-<!ELEMENT u (#PCDATA|p|pause|del|vocal)*>
+<!ELEMENT recording (equipment,broadcast)>
+<!ATTLIST recording
+  xmlns CDATA #FIXED ''
+  dur NMTOKEN #REQUIRED
+  type NMTOKEN #REQUIRED>
+
+<!ELEMENT u (#PCDATA|del|vocal)*>
 <!ATTLIST u
   xmlns CDATA #FIXED ''
   gender NMTOKEN #REQUIRED
@@ -85,20 +27,18 @@
   trans NMTOKEN #IMPLIED
   who CDATA #REQUIRED>
 
-<!ELEMENT p (#PCDATA|pause|del|vocal)*>
-<!ATTLIST p
+<!ELEMENT equipment (p)>
+<!ATTLIST equipment
   xmlns CDATA #FIXED ''>
 
-<!ELEMENT pause EMPTY>
-<!ATTLIST pause
-  xmlns CDATA #FIXED ''
-   dur NMTOKEN #IMPLIED>
-   
+<!ELEMENT broadcast (bibl)>
+<!ATTLIST broadcast
+  xmlns CDATA #FIXED ''>
+
 <!ELEMENT del (#PCDATA)>
 <!ATTLIST del
   xmlns CDATA #FIXED ''
-  type NMTOKEN #REQUIRED
-  dur NMTOKEN #IMPLIED>
+  type NMTOKEN #REQUIRED>
 
 <!ELEMENT vocal EMPTY>
 <!ATTLIST vocal
@@ -107,6 +47,39 @@
   dur NMTOKEN #IMPLIED
   type NMTOKEN #REQUIRED>
 
+<!ELEMENT p (#PCDATA)>
+<!ATTLIST p
+  xmlns CDATA #FIXED ''>
 
-  
+<!ELEMENT bibl (title,author,respStmt+,series,date)>
+<!ATTLIST bibl
+  xmlns CDATA #FIXED ''>
 
+<!ELEMENT author (#PCDATA)>
+<!ATTLIST author
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT respStmt (resp,name)>
+<!ATTLIST respStmt
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT series (title)>
+<!ATTLIST series
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT date (#PCDATA)>
+<!ATTLIST date
+  xmlns CDATA #FIXED ''
+  when NMTOKEN #REQUIRED>
+
+<!ELEMENT resp (#PCDATA)>
+<!ATTLIST resp
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT name (#PCDATA)>
+<!ATTLIST name
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT title (#PCDATA)>
+<!ATTLIST title
+  xmlns CDATA #FIXED ''>

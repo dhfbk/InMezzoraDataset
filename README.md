@@ -17,7 +17,18 @@ For each interview the following information was manually annotated and is inclu
 ## Data
 
 - the folder "`txt-speeches`" contains transcriptions of every single interviews in plain text without tags
-
 - the folder "`xml-complete`" contains annotated trascriprions of single TV show episode 
-
 - the folder "`xml-speeches`" includes transcriptions of single annotated interviews 
+
+## Guidelines
+
+In this [document](guidelines_v1.pdf) we describe in detail the process we followed to create the corpus and to annotate the data. Guidelines are a useful resource if you want to duplicate, extend or contribute to our work.
+
+## Publications
+
+- Trotta, Daniela, Palmero Aprosio, Alessio, Tonelli, Sara, and Elia, Annibale. [*Adding Gesture,*
+  *Posture and Facial Displays to the PoliModal Corpus of Political Interviews*.](lrec2020.pdf) In Proceedings of
+  LREC 2020, Marseille, France. 
+- Trotta, Daniela, Tonelli Sara, Palmero Aprosio, Alessio,and Elia, Annibale. [*Annotation and
+  Analysis of the PoliModal Corpus of Political Interviews*](http://ceur-ws.org/Vol-2481/paper73.pdf). Proceedings of CliC-it 2019, Bari,
+  Italy.
