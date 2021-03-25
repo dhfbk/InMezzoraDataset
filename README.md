@@ -56,3 +56,13 @@ In this [document](guidelines_v1.pdf) we describe in detail the process we follo
 - Trotta, Daniela, Tonelli Sara, Palmero Aprosio, Alessio,and Elia, Annibale. [*Annotation and
   Analysis of the PoliModal Corpus of Political Interviews*](http://ceur-ws.org/Vol-2481/paper73.pdf). In Proceedings of CliC-it 2019, Bari,
   Italy.
+  
+## External links
+
+The corpus is also indexed on the following respositories:
+
+- ILC4CLARIN Repository: http://hdl.handle.net/20.500.11752/OPEN-534
+- Accademia della Crusca, subsection Italiano istituzionale, giuridico e amministrativo: https://accademiadellacrusca.it/it/contenuti/banche-dati-corpora-e-archivi-testuali/6228
+
+
+
