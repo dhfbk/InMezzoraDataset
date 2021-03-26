@@ -61,6 +61,7 @@ In this [document](guidelines_v1.pdf) we describe in detail the process we follo
 
 The corpus is also indexed on the following respositories:
 
+- CLARIN infrastructure: https://www.clarin.eu/resource-families/multimodal-corpora
 - ILC4CLARIN Repository: http://hdl.handle.net/20.500.11752/OPEN-534
 - Accademia della Crusca, subsection Italiano istituzionale, giuridico e amministrativo: https://accademiadellacrusca.it/it/contenuti/banche-dati-corpora-e-archivi-testuali/6228
 
